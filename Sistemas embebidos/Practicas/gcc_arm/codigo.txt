@@ -1,0 +1,28 @@
+-------comandos para creación------
+
+$ mkdir -p ~/video/gcc							#Creamos nuestras carpetas
+$ cd video			
+$ cd gcc
+
+ (se crea el archivo blahblah.c en la carpeta creada)
+
+$ gcc p1.c -o p1							#compilamos el archivo
+$ gcc ./p1								#mandamos a llamar el archivo
+
+
+-------codigo del programa----------
+
+#include  <stdio.h>							#se declara la librería
+int main(void)								
+{
+	int a;								#se declara la variable que nos pondrá el limite
+	int b;								#se declara la variable que nos dará la suma
+	printf("Digite un numero a aumentar de 5 en 5\n");		#se imprime un mensaje con la instruccion
+	scanf("%d", &b);						#se escanea el numero dado por el usuario
+	for (a=1; a<11; a++)						#se establecen los limites y condiciones
+	{
+		b=b+5;							#se establece la condicion de suma
+		printf("Los numeros son: %d\n" ,b);			#se imprime un mensaje con el resultado obtenido
+	}
+	return 0;
+}
