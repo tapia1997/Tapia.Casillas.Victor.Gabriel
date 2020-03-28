@@ -1,0 +1,41 @@
+-------------------------
+|| Codigo sin cambiar  ||
+-------------------------
+
+{
+char c;
+c = fgetc(stdin);
+while(c != EOF)
+{
+if(isalnum(c))
+printf("%c", c);
+else
+c = fgetc(stdin);
+}
+return 1;
+}
+
+-----------------------------------------------------
+
+-------------------------
+|| Codigo modificado   ||
+-------------------------
+
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main(int argc, char **argv, int putchar)
+{
+char c;
+printf("teclea lo que quieras \n");
+while(c != EOF)
+{
+c = fgetc(stdin);
+if(isalnum(c))
+printf("%c", c);
+else
+c = fgetc(stdin);
+}
+return 1;
+}
